@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xsJ-eh-q6W">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9mb-Ec-8Jo">
+            <objects>
+                <navigationController id="xsJ-eh-q6W" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T8t-eZ-flF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zDx-jP-OkB" kind="relationship" relationship="rootViewController" id="WDL-FN-pYL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5L-eG-9KT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-715" y="168"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cd3-93-w0S">
+            <objects>
+                <viewController id="zDx-jP-OkB" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fN1-It-PXe"/>
+                        <viewControllerLayoutGuide type="bottom" id="LhV-Yq-rIG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jPD-5E-OtA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="普通模型" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t3A-ui-mA8">
+                                <rect key="frame" x="20" y="84" width="430" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqm-eK-2x5">
+                                <rect key="frame" x="480" y="84" width="54" height="30"/>
+                                <state key="normal" title="查看值1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="see1:" destination="zDx-jP-OkB" eventType="touchUpInside" id="fdJ-ZM-a8P"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="键值模型" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VxC-Dh-LoL">
+                                <rect key="frame" x="20" y="124" width="430" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6m4-kx-van">
+                                <rect key="frame" x="480" y="124" width="54" height="30"/>
+                                <state key="normal" title="查看值2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="see2:" destination="zDx-jP-OkB" eventType="touchUpInside" id="hDF-m1-Txz"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="时间选择" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-Bu-7S4">
+                                <rect key="frame" x="20" y="164" width="430" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inZ-5E-uQP">
+                                <rect key="frame" x="480" y="164" width="54" height="30"/>
+                                <state key="normal" title="查看值3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="see3:" destination="zDx-jP-OkB" eventType="touchUpInside" id="wyK-ah-F2a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qHC-Bu-7S4" firstAttribute="height" secondItem="VxC-Dh-LoL" secondAttribute="height" id="1Tb-XM-lZU"/>
+                            <constraint firstItem="6m4-kx-van" firstAttribute="trailing" secondItem="Hqm-eK-2x5" secondAttribute="trailing" id="31h-9x-zQG"/>
+                            <constraint firstItem="t3A-ui-mA8" firstAttribute="height" secondItem="VxC-Dh-LoL" secondAttribute="height" id="6sj-Rm-ZhC"/>
+                            <constraint firstItem="qHC-Bu-7S4" firstAttribute="trailing" secondItem="VxC-Dh-LoL" secondAttribute="trailing" id="CUb-XN-Ppe"/>
+                            <constraint firstItem="t3A-ui-mA8" firstAttribute="leading" secondItem="VxC-Dh-LoL" secondAttribute="leading" id="ERb-Ck-ybr"/>
+                            <constraint firstItem="t3A-ui-mA8" firstAttribute="centerY" secondItem="Hqm-eK-2x5" secondAttribute="centerY" id="PP3-bc-gQB"/>
+                            <constraint firstItem="inZ-5E-uQP" firstAttribute="leading" secondItem="6m4-kx-van" secondAttribute="leading" id="Rpg-2X-3Hb"/>
+                            <constraint firstItem="qHC-Bu-7S4" firstAttribute="bottom" secondItem="inZ-5E-uQP" secondAttribute="bottom" id="Rwy-pZ-uyK"/>
+                            <constraint firstItem="VxC-Dh-LoL" firstAttribute="top" secondItem="t3A-ui-mA8" secondAttribute="bottom" constant="10" id="UN3-wD-OOn"/>
+                            <constraint firstItem="t3A-ui-mA8" firstAttribute="top" secondItem="jPD-5E-OtA" secondAttribute="top" constant="84" id="V4n-9T-bMP"/>
+                            <constraint firstItem="6m4-kx-van" firstAttribute="leading" secondItem="Hqm-eK-2x5" secondAttribute="leading" id="aGg-9t-efL"/>
+                            <constraint firstAttribute="trailing" secondItem="t3A-ui-mA8" secondAttribute="trailing" constant="150" id="cjr-mq-puM"/>
+                            <constraint firstItem="t3A-ui-mA8" firstAttribute="trailing" secondItem="VxC-Dh-LoL" secondAttribute="trailing" id="efH-1R-BSl"/>
+                            <constraint firstItem="qHC-Bu-7S4" firstAttribute="leading" secondItem="VxC-Dh-LoL" secondAttribute="leading" id="efR-el-wj0"/>
+                            <constraint firstItem="Hqm-eK-2x5" firstAttribute="leading" secondItem="t3A-ui-mA8" secondAttribute="trailing" constant="30" id="eln-97-BFi"/>
+                            <constraint firstItem="qHC-Bu-7S4" firstAttribute="top" secondItem="inZ-5E-uQP" secondAttribute="top" id="j5U-4J-fyS"/>
+                            <constraint firstItem="qHC-Bu-7S4" firstAttribute="top" secondItem="VxC-Dh-LoL" secondAttribute="bottom" constant="10" id="k7o-Dc-QS1"/>
+                            <constraint firstItem="inZ-5E-uQP" firstAttribute="trailing" secondItem="6m4-kx-van" secondAttribute="trailing" id="l0Q-vc-nDW"/>
+                            <constraint firstItem="6m4-kx-van" firstAttribute="bottom" secondItem="VxC-Dh-LoL" secondAttribute="bottom" id="syo-nA-rb2"/>
+                            <constraint firstItem="t3A-ui-mA8" firstAttribute="leading" secondItem="jPD-5E-OtA" secondAttribute="leading" constant="20" id="u3y-My-9fo"/>
+                            <constraint firstItem="6m4-kx-van" firstAttribute="top" secondItem="VxC-Dh-LoL" secondAttribute="top" id="z4t-y0-yfX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GSh-se-7me">
+                        <barButtonItem key="rightBarButtonItem" title="键盘退下" id="SHx-k6-eMm">
+                            <connections>
+                                <action selector="closeKeyboard:" destination="zDx-jP-OkB" id="i4d-8o-eo7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tf1" destination="t3A-ui-mA8" id="gBv-v1-hMx"/>
+                        <outlet property="tf2" destination="VxC-Dh-LoL" id="oJG-bd-Bsx"/>
+                        <outlet property="tf3" destination="qHC-Bu-7S4" id="UNg-zP-E9o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMf-JB-jS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="168"/>
+        </scene>
+    </scenes>
+</document>

@@ -18,10 +18,10 @@
 
 <br /><br />
 ####使用示例：<br />
-   #import "UITextField+PicerView.h"
+     #import "UITextField+PicerView.h"
 
-   普通单列
-   安装：
+       普通单列
+       安装：
     //创建模型
     Core1PickerModel *pickerModel=[Core1PickerModel pickerModel:@[@"男",@"女"]];
     

@@ -79,9 +79,9 @@
 
 
 ####效果图：<br />
-![image](./CorePickerView/pic/1.png)<br />
+![image](./CorePickerView/pic/1.jpg)<br />
 ![image](./CorePickerView/pic/2.png)<br />
-![image](./CorePickerView/pic/3.png)<br />
+![image](./CorePickerView/pic/3.jpg)<br />
 <br /><br />
 -----
     CorePickerView 极简选取器，一安一取，简单方便！
